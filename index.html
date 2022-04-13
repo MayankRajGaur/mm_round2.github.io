@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monday Morning</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        * {
+            margin: 0px;
+        }
+
+        .left {
+            position: absolute;
+            width: 221px;
+            display: block;
+            background-color: rgb(48 55 61);
+            height: 1225px;
+        }
+
+        .right {
+            position: absolute;
+            top: 0px;
+            left: 225px;
+            width: 1290px;
+            display: block;
+            /* border: 2px solid yellow; */
+            height: 100%;
+        }
+
+        .left img {
+            width: 70px;
+            height: 52px;
+            padding-top: 20px;
+            padding-left: 66px;
+        }
+
+        .left .MM {
+            float: right;
+            color: white;
+            padding: 5px;
+            padding-right: 43px;
+            font-size: 20px;
+            display: flex;
+            box-sizing: border-box;
+        }
+
+        .hr {
+            position: relative;
+            top: 30px;
+            height: 0%;
+            width: 68%;
+            margin: 0px 34px;
+        }
+
+        .top-center {
+            padding: 14px 24px;
+            font-size: 30px;
+            font-weight: bold;
+
+        }
+
+        .btn {
+            padding: 0px 7px;
+            border: none;
+            position: absolute;
+            right: 257px;
+            top: 21px;
+            border-radius: 8px;
+        }
+
+        .btn:hover {
+            cursor: pointer;
+        }
+
+        .Bell {
+            padding: 0px 5px;
+            border: none;
+            position: absolute;
+            right: 214px;
+            top: 20px;
+            border-radius: 8px;
+        }
+
+        .Bell:hover {
+            cursor: pointer;
+        }
+
+        .icon-button__badge {
+            position: absolute;
+            top: -5px;
+            right: -3px;
+            width: 12px;
+            height: 12px;
+            background: #0011ff;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+        }
+
+
+
+        .container1 {
+            height: auto;
+            width: 100%;
+            padding: 5px 5px;
+            margin: 15px 5px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+        }
+
+
+        .box {
+            border: 1px solid rgb(157, 156, 156);
+            width: 250px;
+            margin: 3px;
+            height: 148px;
+            border-radius: 14px;
+        }
+
+        .inbox {
+            text-align: center;
+            padding-top: 20px;
+            font-size: 25px;
+        }
+
+        .box:hover {
+            border: 1px solid blue;
+            cursor: pointer;
+            color: blue;
+        }
+
+
+        .numbertopbox {
+            text-align: center;
+            padding: 22px;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .midbox {
+            height: auto;
+            margin: 7px 6px;
+            padding: 2px 2px;
+            height: auto;
+        }
+
+        .midbox img {
+            width: 100%;
+            display: inline-block;
+        }
+
+        .container2 {
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        .block {
+            border: 1px solid rgb(126, 124, 124);
+            width: 630px;
+            margin: 9px 3px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        #topleft {
+            margin: 2px 2px;
+            padding-left: 32px;
+            padding-top: 32px;
+            font-size: 24px;
+            font-weight: bold;
+            display: inline-block;
+            box-sizing: border-box;
+
+        }
+
+        #topright {
+            float: right;
+            padding: 36px 33px;
+            color: darkblue;
+            font-weight: bold;
+        }
+
+        #small {
+            padding: 5px 35px;
+        }
+
+        /* .content {
+            padding-top: 20px;
+            padding-left: 35px;
+            font-size: 20px;
+        } */
+
+        #rows {
+            padding-top: 16px;
+            padding-left: 35px;
+            font-size: 20px;
+            padding-bottom: 16px;
+            display: inline-block;
+        }
+
+        #row1 {
+            padding-top: 16px;
+            padding-left: 35px;
+            font-size: 20px;
+            padding-bottom: 16px;
+            display: inline-block;
+            color: rgb(160, 157, 157);
+        }
+
+        .numbercol {
+            float: right;
+            padding-right: 34px;
+            padding-top: 17px;
+            color: gray;
+        }
+
+        .btncol {
+            float: right;
+            margin-right: 29px;
+            margin-top: 14px;
+        }
+
+        #btncol2 {
+            background-color: #c5c525;
+            color: white;
+            border-radius: 7px;
+            border: none;
+            padding: 6px 9px;
+        }
+
+        #btncol3 {
+            background-color: rgb(8, 193, 8);
+            color: white;
+            border-radius: 7px;
+            border: none;
+            padding: 6px 9px;
+        }
+
+        #btncol4 {
+            background-color: rgb(226 224 224);
+            color: #877d7d;
+            border: none;
+            padding: 6px 9px;
+            border-radius: 7px;
+        }
+
+        #checkbox {
+            margin-left: 20px;
+            transform: scale(1.5);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="left">
+        <div class="logo">
+            <img src="https://i.postimg.cc/nhBMhfLv/logo.png" alt="" class="logo">
+            <div class="MM">Monday Morning</div>
+        </div>
+        <hr class="hr">
+        <div class="head">
+            
+        </div>
+
+    </div>
+    <div class="right">
+        <div class="top-center">Overview</div>
+        <div class="top-right">
+            <button class="btn">
+                <span class="material-icons">
+                    search
+                </span>
+            </button>
+            <button type="button" class="Bell">
+                <span class="material-icons">notifications</span>
+                <span class="icon-button__badge"></span>
+            </button>
+        </div>
+        <div class="container1">
+            <div class="box" id="box1">
+                <div class="inbox">Unresolved</div>
+                <div class="numbertopbox">60</div>
+            </div>
+            <div class="box" id="box2">
+                <div class="inbox">Overdue</div>
+                <div class="numbertopbox">16</div>
+            </div>
+            <div class="box" id="box3">
+                <div class="inbox">Open</div>
+                <div class="numbertopbox">43</div>
+            </div>
+            <div class="box" id="box4">
+                <div class="inbox">On hold</div>
+                <div class="numbertopbox">64</div>
+            </div>
+        </div>
+        <div class="mid">
+            <div class="midbox">
+                <img src="https://i.postimg.cc/ryD42b59/Graph.png" alt="">
+            </div>
+        </div>
+        <div class="container2">
+            <div class="block">
+                <div id="topleft">Unresolved tickets</div>
+                <div id="topright">View detail</div>
+                <div id="small">Group: Support</div>
+                <div>
+
+                    <p class="content" id="rows">Waiting on Feature Request</p>
+                    <p class="numbercol">4238</p>
+
+                    <hr>
+                    <p class="content" id="rows">Awaiting Contumer Responses</p>
+                    <p class="numbercol">1005</p>
+                    <hr>
+                    <p class="content" id="rows">Awaiting Deveoper Fix</p>
+                    <p class="numbercol">914</p>
+                    <hr>
+                    <p class="content" id="rows">Pending</p>
+                    <p class="numbercol">281</p>
+
+                </div>
+
+            </div>
+            <div class="block">
+                <div id="topleft">Task</div>
+                <div id="topright">View detail</div>
+                <div id="small">Today</div>
+                <div>
+                    <p class="content" id="row1">Create new task</p>
+
+                    <hr>
+                    <input type="checkbox" name="checkbox" id="checkbox">
+                    <p class="content" id="rows">Finish ticket update</p>
+                    <button class="btncol" id="btncol2">URGENT</button>
+                    <hr>
+                    <input type="checkbox" name="checkbox" id="checkbox">
+                    <p class="content" id="rows">Create new ticket example</p>
+                    <button class="btncol" id="btncol3">NEW</button>
+                    <hr>
+                    <input type="checkbox" name="checkbox" id="checkbox">
+                    <p class="content" id="rows">Update ticket report</p>
+                    <button class="btncol" id="btncol4">DEFAULT</button>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
